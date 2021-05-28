@@ -1,0 +1,21 @@
+<html>
+<body>
+    <input type="image" id="myimage" onclick="record()"src="mic.png" / >
+    <input type="text" name="" id="out1" placeholder="result">
+
+
+    <script>
+        function record() {
+                var recognition = new webkitSpeechRecognition();
+                recognition.lang = "en-US";
+                recognition.onresult = function(event) {
+                    document.getElementById('out1').value = event.results[0][0].transcript;
+               }
+                recognition.start();
+        }
+    </script>
+</body>
+</html> 
+
+
+<!--  fail -->

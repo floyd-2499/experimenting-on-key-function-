@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Volume Up Button Example</title>
+
+    
+  </head>
+  <body onload="onLoad()">
+
+
+    <script type="text/javascript" charset="utf-8" ></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+    }
+
+    // Handle the volume up button
+    //
+    function onVolumeUpKeyDown() {
+    }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language="text/javascript">
+    // Starting with "Play" as the first button state
+    var playpause = true;
+</script>
+</head>
+<body>
+<div id="container">
+<button id="playpause" type="button" name="playButton" onclick="setPlayPause()">Play</button>
+</div>
+</body>
+<script language="text/javascript"> 
+function setPlayPause(){
+    // Here we toggle playpause from true to false and vice versa
+    playpause = !playpause;
+    if(playpause)
+    {
+        document.getElementById("playpause").value = "Play";
+        alert("Gallery has been paused!");
+        // Instead of the alert statement you would actually do the pausing of the gallery here
+    }
+    else
+    {
+        document.getElementById("playpause").value = "Pause";
+        alert("Gallery is now playing!");
+        // Instead of the alert statement you would place the code here that would start the gallery playing
+    }
+}
+</script>
+</html>
